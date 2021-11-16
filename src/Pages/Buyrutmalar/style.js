@@ -11,12 +11,18 @@ export const ForthPart = styled.div`
     height:150px;
     background-color:#fff;
     width:965px;
-    margin:30px auto;
+    margin:20px auto;
+    border-radius:8px;
+    transition:all .4s linear;
+    :hover{
+        box-shadow:0 0 10px 2px rgba(0,0,0,.1);
+        transform:translateY(-8px)
+    }
 `
 export const First = styled.div`
     display:flex;
     flex-direction:column;
-    border-right:1px solid red;
+    border-right:2px solid #EDEFF3;
     height:100%;
     .Times{
         height:100%;
@@ -46,6 +52,7 @@ export const First = styled.div`
                 align-items:center;
                 justify-content:center;
                 margin-left:16px;
+                cursor:pointer;
             }
               
         }
@@ -71,7 +78,7 @@ export const First = styled.div`
 export const Second = styled.div`
     width:249px;
     height:100%;
-    border-right:1px solid red;
+    border-right:2px solid #EDEFF3;
     .User{
         height:100%;
         padding-top:25px;
@@ -107,7 +114,7 @@ export const Second = styled.div`
 export const Third = styled.div`
     width:272px;
     height:100%;
-    border-right:1px solid red;
+    border-right:2px solid #EDEFF3;
     .deliver{
         padding-top:25px;
         padding-left:35px;
@@ -149,5 +156,68 @@ export const Third = styled.div`
     }
 `
 export const Forth = styled.div`
-    
+    height:100%;
+    width:220px;
+    .operator{
+        position:relative;
+        padding-top:25px;
+        padding-left:35px;
+        font-family:'verdana';
+        .operatorName{
+            
+            span{
+                font-size:11px;
+                color:#8D9BA8;
+            }
+            p{
+                color:#2D3A45;
+                font-size:14px;
+                
+            }
+        }
+        .Branch{
+            padding-top:12px;
+            span{
+                font-size:11px;
+                color:#8D9BA8;
+            }
+            p{
+                color:#2D3A45;
+                font-size:14px;
+                
+            }
+        }
+        .deleted{
+            span{
+                width:40px;
+                height:40px;
+                background-color:#fff;
+                border-radius:50%;
+                display:flex;
+                position:absolute;
+                right:-20px;
+                bottom:0;
+                box-shadow:0 0 2px 4px rgba(0,0,0,.1);
+                align-items:center;
+                justify-content:center;
+                cursor:pointer;
+            }
+        }
+        .edited{
+            span{
+                width:40px;
+                height:40px;
+                background-color:#fff;
+                border-radius:50%;
+                display:flex;
+                position:absolute;
+                right:-20px;
+                top:20px;
+                box-shadow:0 0 2px 4px rgba(0,0,0,.1);
+                align-items:center;
+                justify-content:center;
+                cursor:pointer;
+            }
+        }
+    }
 `

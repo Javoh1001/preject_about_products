@@ -28,7 +28,10 @@ const Buyrutmalar = () =>{
                                     <div className="User">
                                         <div className="userIcon">
                                             <span>{value.userIcon}</span>
-                                            <p>{value.userName}</p>
+                                            <div>
+                                                <p>{value.userName}</p>
+                                                <p>{value.userLastName}</p>
+                                            </div>
                                         </div>
                                         <div className="userPhone">
                                             <span>{value.userPhoneIcon}</span>
@@ -60,7 +63,23 @@ const Buyrutmalar = () =>{
                                     </div>
                                 </Third>
                                 <Forth>
-
+                                    <div className="operator">
+                                        <div className="operatorName">
+                                            <span>{value.operatorText}</span>
+                                            <p>{value.operatorName}</p>
+                                        </div>
+                                        <div className="Branch">
+                                            <span>{value.branch}</span>
+                                            <p>{value.branchProductName}</p>
+                                            <p>{value.branchName}</p>
+                                        </div>
+                                        <div class="deleted">
+                                            <span>{value.delete}</span>
+                                        </div>
+                                        <div class="edited">
+                                            <span>{value.edit}</span>
+                                        </div>
+                                    </div>
                                 </Forth>
                             </ForthPart>
                         )

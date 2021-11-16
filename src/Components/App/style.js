@@ -10,7 +10,7 @@ export const Global = createGlobalStyle`
 export const Container = styled.div`
     background-color: #E5E5E5;
     width:1366px;
-    height:100vh;
+    // height:100vh;
 `
 export const Ordered = styled.div`
     display:flex;
