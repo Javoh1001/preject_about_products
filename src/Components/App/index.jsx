@@ -1,6 +1,6 @@
 import '../../App.css';
 import Navbar from '../Navbar';
-import SearchMenu from './SearchMenu';
+// import SearchMenu from './SearchMenu';
 import Buyrutmalar from '../../Pages/Buyrutmalar';
 import Maxsulotlar from '../../Pages/Maxsulotlar';
 import {Container,Ordered,NavOrder} from './style'
@@ -14,7 +14,7 @@ function App() {
              <NavOrder>
                 <Navbar />
                 <Ordered>
-                <SearchMenu/>
+                {/* <SearchMenu/> */}
                     <Routes>
                         <Route path="/" element={<Buyrutmalar />} />
                         <Route path="/maxsulotlar" element={<Maxsulotlar />} />

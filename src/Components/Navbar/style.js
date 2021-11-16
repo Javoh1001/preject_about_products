@@ -4,6 +4,9 @@ export const Nav = styled.div`
     background-color:#fff;
     height:100vh;
     width:300px;
+    // position:fixed;
+    // top:0;
+    // left:0;
 `
 export const Logo = styled.div`
     width:100%;

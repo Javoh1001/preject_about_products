@@ -2,12 +2,13 @@ import React from 'react';
 import { Container } from './style'
 import { Buyrutma } from './Buyrutma';
 import {ForthPart,First,Second,Third,Forth} from './style';
+import SearchMenu from '../../Components/App/SearchMenu'
 
 const Buyrutmalar = () =>{
     return(
         <>
+        <SearchMenu/>
             <Container>
-               
                 {
                     Buyrutma.map((value)=>{
                         return(

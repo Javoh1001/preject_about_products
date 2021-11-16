@@ -27,7 +27,7 @@ const SearchMenu = () => {
                         <span className="group"><Group /></span>
                         <span className="rectangle"><Rectangle /> &nbsp; <Rectangle2 /></span>
                     </div>
-                </TopMenu> 
+            </TopMenu> 
                 
                 
            </Menu>  

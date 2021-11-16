@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-//    width:965px;
+    width:1100px;
 //    background-color:#fff;
 //    height:150px;
-//    margin:30px auto;
+//    margin:30px;
 `
 export const ForthPart = styled.div`
     display:flex;
     height:150px;
     background-color:#fff;
-    width:965px;
-    margin:20px auto;
+    width:1100px;
+    margin:30px;
     border-radius:8px;
     transition:all .4s linear;
     :hover{
@@ -21,6 +21,7 @@ export const ForthPart = styled.div`
 `
 export const First = styled.div`
     display:flex;
+    flex:2;
     flex-direction:column;
     border-right:2px solid #EDEFF3;
     height:100%;
@@ -30,7 +31,8 @@ export const First = styled.div`
         padding-top:25px;
         .first_part{
             display:flex;
-            width:218px; 
+            // width:220px; 
+           
             padding-bottom:28px;
             button{
                 width:90px;
@@ -76,7 +78,8 @@ export const First = styled.div`
   
 `
 export const Second = styled.div`
-    width:249px;
+    // width:260px;
+    flex:2;
     height:100%;
     border-right:2px solid #EDEFF3;
     .User{
@@ -112,7 +115,8 @@ export const Second = styled.div`
     
 `
 export const Third = styled.div`
-    width:272px;
+    // width:320px;
+    flex:3;
     height:100%;
     border-right:2px solid #EDEFF3;
     .deliver{
@@ -129,9 +133,9 @@ export const Third = styled.div`
             }
             .payment{
                 display:flex;
-                padding-left:36px;
+                padding-left:80px;
                 p{
-                    padding-left:4px;
+                    padding-left:10px;
                 }
             }
         }
@@ -157,7 +161,8 @@ export const Third = styled.div`
 `
 export const Forth = styled.div`
     height:100%;
-    width:220px;
+    // width:250px;
+    flex:2;
     .operator{
         position:relative;
         padding-top:25px;

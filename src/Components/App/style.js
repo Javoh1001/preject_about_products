@@ -9,23 +9,31 @@ export const Global = createGlobalStyle`
 `
 export const Container = styled.div`
     background-color: #E5E5E5;
-    width:1366px;
+    // max-width:1366px;
+    width:100%;
     // height:100vh;
 `
 export const Ordered = styled.div`
     display:flex;
     flex-direction:column;
+    // position:relative;
+    // left:300px;
+    width:100%;
+    // top:80px;
 `
 export const NavOrder = styled.div`
     display:flex;
 `
 
 export const Menu = styled.div`
-    width:1066px;
+    width:100%;
+    // position:fixed;
+    // top:0;
+    // z-index:10;
 `
 export const TopMenu = styled.div`
     background-color:#fff;
-    width:100%;
+    // width:100%;
     height:80px;
     display:flex;
     align-items:center;
