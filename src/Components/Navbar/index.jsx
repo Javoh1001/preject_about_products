@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-    Nav,
-    Logo,
-    List
-} from './style';
+import {Nav,Logo,List} from './style';
 import {Link} from 'react-router-dom';
 import Bitmap from './Images/Bitmap.png';
 import { Sidebar } from './Sidebar';

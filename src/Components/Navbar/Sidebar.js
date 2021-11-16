@@ -6,6 +6,7 @@ import {ReactComponent as Map} from './Images/map-pin.svg';
 import {ReactComponent as User} from './Images/users.svg';
 import {ReactComponent as BarChart} from './Images/bar-chart-2.svg';
 import {ReactComponent as Setting} from './Images/setting.svg';
+
 export const Sidebar = [
     {
         id:1,

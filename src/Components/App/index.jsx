@@ -1,7 +1,9 @@
 import '../../App.css';
 import Navbar from '../Navbar';
 import SearchMenu from './SearchMenu';
-import {Container,Ordered, TopMenu} from './style'
+import Buyrutmalar from '../../Pages/Buyrutmalar';
+import Maxsulotlar from '../../Pages/Maxsulotlar';
+import {Container,Ordered,NavOrder} from './style'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -9,14 +11,16 @@ function App() {
     <>
       <Container>
         <Router>
-           <Ordered>
-              <Navbar />
-              <SearchMenu/>
-           </Ordered>
-            
-            <Routes>
-              <Route />
-            </Routes>
+             <NavOrder>
+                <Navbar />
+                <Ordered>
+                <SearchMenu/>
+                    <Routes>
+                        <Route path="/" element={<Buyrutmalar />} />
+                        <Route path="/maxsulotlar" element={<Maxsulotlar />} />
+                    </Routes>
+                </Ordered>
+             </NavOrder>
         </Router>
         
       </Container>

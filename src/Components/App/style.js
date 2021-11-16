@@ -14,6 +14,14 @@ export const Container = styled.div`
 `
 export const Ordered = styled.div`
     display:flex;
+    flex-direction:column;
+`
+export const NavOrder = styled.div`
+    display:flex;
+`
+
+export const Menu = styled.div`
+    width:1066px;
 `
 export const TopMenu = styled.div`
     background-color:#fff;
