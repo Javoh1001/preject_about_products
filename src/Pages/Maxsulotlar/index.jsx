@@ -1,9 +1,9 @@
 import React from 'react'
 import MaxsulotlarMenu from './MaxsulotlarMenu';
 import {ProductAction, Products} from './MaxsulotlarMenu';
-import {ProductActionStyle,ProductStyle} from './style';
+import {ProductActionStyle,ProductStyle,Button} from './style';
 
-const index = () => {
+const Maxsulotlar = () => {
     return (
         <>
             <MaxsulotlarMenu /> 
@@ -12,7 +12,9 @@ const index = () => {
                     ProductAction.map((value)=>{
                         return(
                             <div className="product-action1">
-                                <p>{value.title}</p>
+                               <ul>
+                                    <li>{value.title}</li>
+                               </ul>
                             </div>
                         )
                     })
@@ -23,20 +25,22 @@ const index = () => {
                      Products.map((value)=>{
                          return(
                             <div className="product-style">
-                                <span className="img" size={'img'}>{value.foodImage}</span>
-                                <p size={'foodName1'}>{value.foodName}</p>
-                                <p size={'foodKategory1'}>{value.foodKategory}</p>
-                                <p size={'foodCos1'}>{value.foodCost}</p>
-                                <p size={'foodAddition1'}>{value.foodAddition}</p>
-                                <span className="edit">{value.foodEdiztIcon}</span>
-                                <span className="delete">{value.foodDeleteIcon}</span>
+                                <ul>
+                                    <li className="img" size={'img'}>{value.foodImage}</li>
+                                    <li>{value.foodName}</li>
+                                    <li>{value.foodKategory}</li>
+                                    <li>{value.foodCost}</li>
+                                    <li>{value.foodAddition}</li>
+                                    <li className="edit_delete"><span className="edit">{value.foodEdiztIcon}</span> <span>{value.foodDeleteIcon}</span></li>
+                                </ul>
                             </div>
                          )
                      })
                 }
             </ProductStyle>
+            <Button>Yana Yuklash</Button>
         </>
     )
 }
 
-export default index
+export default Maxsulotlar

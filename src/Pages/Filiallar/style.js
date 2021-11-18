@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-
+    // width:992px;
 `
 
 export const Menu = styled.div`
@@ -85,92 +85,81 @@ export const TopMenu = styled.div`
 `
 
 export const ProductActionStyle = styled.div`
+    height:36px;
     display:flex;
     align-items:center;
+    // justify-content:space-around;
     margin-top:20px;
-    background-color:#fff;
-    align-items:center;
-    height:36px;
-    justify-content:space-around;
     width:100%;
+    background-color:#fff;
     .product-action1{
-      
-        // display:flex;
-        // align-items:center;
-        // justify-content:space-around;
-       
-         ul{
-             list-style:none;
-             li{
-                 width:200px;
-                //  text-align:center;
+        .product_act{
+            list-style:none;
+            padding-left:40px;
+            li{
+                width:220px;
                 font-size:11px;
                 text-transform:uppercase;
                 color:#2D3A45;
                 font-family:'verdana';
                 font-weight:600;
                 padding:6px;
-                // border-left:1px solid #8D9BA8;
                 padding-left:10px;
-             }
-         }   
+                text-align:center;
+            }
+        }  
         
-        
-    }
+    // }
 `
+
+
 
 export const ProductStyle = styled.div`
     margin:20px 36px 0px 36px;
-    // width:992px;
     .product-style{
         background-color:#fff;
         margin-bottom:20px;
         padding:0 15px;
+        height:60px;
+        display:flex;
+        align-items:center;
         font-family:'verdana';
         font-size:13px;
         transition:all .3s linear;
         :hover{
             transform:translateY(-8px);
         }
+       
         ul{
             display:flex;
             list-style:none;
             align-items:center;
-            height:60px;
-            
+            justify-content:space-around;
+            width:100%;
             li{
-                width:230px;
-                &:first-child{
-                    width:80px;
-                }
+                width:180px;
+                // text-align:center;
+                margin-left:30px;
             }
-        }
-       
-       
-        .edit_delete{
-            display:flex;
-            align-items:center;
-            justify-content:center;
-           
             .edit{
-                margin-right:50px;
+                margin-right:30px;
             }
-            span{
+            .edit_and_delete{
+                display:flex;
+            }
+            .edit_delete{
+                display:flex;
+                align-items:center;
+                justify-content:center;
                 width:36px;
                 height:36px;
                 border-radius:18px;
                 box-shadow:0 0 6px 2px rgba(0,0,0,.2);
                 cursor:pointer;
-                display:flex;
-                align-items:center;
-                justify-content:center;
+                flex-direction:column;
             }
         }
+
+        
     }
-`
-export const Button = styled.button`
-    margin:0px 36px 0px 36px;
-    height:40px;
-    font-family:'verdana';
-    cursor:pointer;
 `

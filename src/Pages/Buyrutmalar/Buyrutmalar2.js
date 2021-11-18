@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container } from './style'
 import { Buyrutma } from './Buyrutma';
-import {ForthPart,First,Second,Third,Forth} from './style';
-import SearchMenu from '../../Components/App/SearchMenu'
+import {ForthPart,First,Second,Third} from './style';
+import SearchMenu from '../../Components/App/SearchMenu';
 
-const Buyrutmalar = () =>{
+const Buyrutmalar2 = () =>{
     return(
         <>
-        <SearchMenu />
+        <SearchMenu/>
             <Container>
                 {
                     Buyrutma.map((value)=>{
@@ -63,25 +63,7 @@ const Buyrutmalar = () =>{
                                         </div>
                                     </div>
                                 </Third>
-                                <Forth>
-                                    <div className="operator">
-                                        <div className="operatorName">
-                                            <span>{value.operatorText}</span>
-                                            <p>{value.operatorName}</p>
-                                        </div>
-                                        <div className="Branch">
-                                            <span>{value.branch}</span>
-                                            <p>{value.branchProductName}</p>
-                                            <p>{value.branchName}</p>
-                                        </div>
-                                        <div class="deleted">
-                                            <span>{value.delete}</span>
-                                        </div>
-                                        <div class="edited">
-                                            <span>{value.edit}</span>
-                                        </div>
-                                    </div>
-                                </Forth>
+                                
                             </ForthPart>
                         )
                     })
@@ -90,4 +72,4 @@ const Buyrutmalar = () =>{
         </>
     )
 }
-export default Buyrutmalar;
+export default Buyrutmalar2;

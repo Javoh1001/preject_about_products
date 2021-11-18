@@ -20,11 +20,12 @@ export const ProductAction = [
     {
         id:3,
         title:'Narxi',
-    },{
+    },
+    {
         id:4,
         title:'Qoshimcha',
-    }
-    ,{
+    },
+    {
         id:5,
         title:'Action',
     }
@@ -102,16 +103,7 @@ export const Products = [
         foodEdiztIcon:<Edit/>,
         foodDeleteIcon:<Delete/>,
     },
-    {
-        id:8,
-        foodImage:<Oval/>,
-        foodName:'Lavash Mini',
-        foodKategory:'Lavash',
-        foodCost:'18000 UZS',
-        foodAddition:'Lavash',
-        foodEdiztIcon:<Edit/>,
-        foodDeleteIcon:<Delete/>,
-    },
+ 
     
 ]
 

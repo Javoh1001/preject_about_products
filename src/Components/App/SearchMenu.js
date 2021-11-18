@@ -1,12 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { TopMenu, Menu } from './style'
 import {ReactComponent as Plus} from './AppImage/plus.svg';
 import {ReactComponent as Group} from './AppImage/Group.svg';
 import {ReactComponent as Rectangle} from './AppImage/Rectangle.svg';
 import {ReactComponent as Rectangle2} from './AppImage/Rectangle2.svg';
-
+import Buyrutmalar from '../../Pages/Buyrutmalar';
+import Buyrutmalar2 from '../../Pages/Buyrutmalar/Buyrutmalar2';
 
 const SearchMenu = () => {
+    const [link, setLink] = useState(false);
+    const Click = ()=>{
+        setLink(link ? <Buyrutmalar/>: <Buyrutmalar2/>)
+    }
     return (
         <>
            <Menu>
@@ -24,7 +29,7 @@ const SearchMenu = () => {
                     </ul>
                     </div>
                     <div class="turnOn">
-                        <span className="group"><Group /></span>
+                        <span className="group"><Group onClick={Click} /></span>
                         <span className="rectangle"><Rectangle /> &nbsp; <Rectangle2 /></span>
                     </div>
             </TopMenu> 
